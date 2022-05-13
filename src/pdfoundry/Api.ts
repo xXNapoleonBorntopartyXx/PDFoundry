@@ -228,7 +228,7 @@ export default class Api {
      */
     public static findPDFDataByCode(code: string, allowInvisible: boolean = true): PDFData | undefined {
         return Api.findPDFData((data: PDFData) => {
-            return data.code === code;
+            return true;
         }, allowInvisible);
     }
 
